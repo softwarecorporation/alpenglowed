@@ -16,7 +16,7 @@ Both stay diskless-first (rootfs in RAM), no persistent state unless explicitly 
 
 | Area | Status |
 |------|--------|
-| `alpenglowed` repo | Already separate (`github.com/tschk/alpenglowed`), consumed via path-dep build (`build-alpenglowed-glibc.sh`) + dinit service. **Not** a git submodule; sibling-checkout convention. |
+| `alpenglowed` repo | Already separate (`github.com/softwarecorporation/alpenglowed`), consumed via path-dep build (`build-alpenglowed-glibc.sh`) + dinit service. **Not** a git submodule; sibling-checkout convention. |
 | Package manager | Oil (Rust, APK format, sync HTTP, ~2.3K LOC). Committed, not being replaced. |
 | Kernel preempt | `CONFIG_PREEMPT` not set; `CONFIG_PREEMPT_LAZY=y` (QEMU-minimal config). No RT patchset. |
 | MAC | `CONFIG_SECURITY_SELINUX=n` (minimal.config). `CONFIG_SECURITY_LANDLOCK=y` already on in `alpenglow-internet-appliance.config` only — not universal. |
